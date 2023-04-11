@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>This is the Display Accessrecord</h1>
+        
+    <table border="3px">
+        <tr> 
+           
+            <th>Name</th>
+            <th>Anthor</th>
+            <th>Date</th>
+        </tr>
+    {% for k in accessrecord %}
+        <tr>
+          <td>{{k.Name}}</td>
+          <td>{{k.Author}}</td>
+          <td>{{k.Date}}</td>
+        </tr>
+    {% endfor %}
+
+    </table>
+    </center>
+    
+</body>
+</html>
